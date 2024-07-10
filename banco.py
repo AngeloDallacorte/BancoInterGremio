@@ -56,7 +56,13 @@ def editar_usuario(cpf):
         usuarios[cpf]['nome'] = novo_nome
         print(f"Dados do usuário {cpf} atualizados para: {usuarios[cpf]}")
     else:
-        print("Usuário não encontrado.")
+        print("Usuário não encontrado.")elif escolha == 5:
+            
+        cpf = input("Digite o CPF: ").strip()
+        gerar_extrato(cpf)
+  elif escolha == 6:
+            cpf = input("Digite o CPF: ").strip()
+            editar_usuario(cpf)
 
 # Adicione a função fechar_conta aqui
 # Adicione a função consultar_saldo aqui
